@@ -1,38 +1,45 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-areas: 
+  'navbar navbar navbar navbar'
+  'sidebar greeting greeting greeting'
+  'sidebar sunrise climate timer'
+  'sidebar chuck chuck chuck'
+  'sidebar calendar calendar calendar';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-navbar{grid-area: navbar;}
+.left-sidebar{grid-area: sidebar;}
+.app-greeting{grid-area: greeting;}
+.sunrise{grid-area: sunrise;}
+.climate-data{grid-area: climate;}
+.countdown-timer{grid-area: timer;}
+.chuck-norris{grid-area: chuck;}
+.gmail-calendar{grid-area: calendar;}
+
+.top-navbar{
+  font-family: ;
+  display: flex;
+  background: #C5D5E4;
+  border-bottom: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.api-divs{
+  border: 1px solid #C5D5E4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-sidebar{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #EBF5F8; 
+}
+li {
+  list-style-type: none;
+}
+.left-unordered-list li a{ 
+  color: black;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
