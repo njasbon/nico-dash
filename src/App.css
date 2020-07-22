@@ -4,7 +4,7 @@
   'navbar navbar navbar navbar'
   'sidebar greeting greeting greeting'
   'sidebar sunrise climate timer'
-  'sidebar chuck chuck chuck'
+  'sidebar todo todo todo'
   'sidebar calendar calendar calendar';
 }
 
@@ -14,14 +14,14 @@
 .sunrise{grid-area: sunrise;}
 .climate-data{grid-area: climate;}
 .countdown-timer{grid-area: timer;}
-.chuck-norris{grid-area: chuck;}
+.todo-list{grid-area: todo;}
 .gmail-calendar{grid-area: calendar;}
 
 .top-navbar{
   display: flex;
   justify-content: flex-start;
-  background: #C5D5E4;
-  border-bottom: 3px solid black;
+  background: #2DC7FF;
+  border-bottom: 3px solid #0081AF;
 }
 
 .top-navbar h1{
@@ -39,21 +39,26 @@
 
 .api-divs{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  border: 1px solid #C5D5E4;
+  border: 1px solid #0081AF;
 }
 
 .left-sidebar{
+  display: flex;
+  flex-direction: column;
+  background: #f0e2b4f0; 
+  border-right: 3px solid #0081AF;
+}
+
+.left-sidebar h2{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 4px;
   font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  background: #EBF5F8; 
-  border-right: 3px solid black;
 }
+
 li {
   list-style-type: none;
 }
+
 .left-unordered-list li a{ 
   color: black;
   text-decoration: none;
@@ -71,7 +76,7 @@ li {
 }
 
 .app-greeting, .api-divs{
-  background-image: url(./witch_on_blades.png);
+  background-image: url(./trianglify.png);
   background-attachment: fixed;
   background-position: left;
 }
