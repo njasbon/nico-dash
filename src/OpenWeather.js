@@ -27,7 +27,13 @@ function OpenWeather(props){
 
     return(
         <>
-        <div className="open-weather-api">
+        <div className="api-divs sunrise">
+            <ul>Sunrise and Sunset for today:
+                <li>Sunrise time for today: {sunrise}</li>
+                <li>Sunset time for today: {sunset}</li>
+            </ul>
+        </div>
+        <div className="api-divs climate-data">
             <ul> Here's the weather for today:
                 <li>Temp: {temp}</li>
                 <li>Description: {description}</li>
@@ -35,13 +41,6 @@ function OpenWeather(props){
                 <li>Min Temp: {tempMin}</li>
                 <li>Max Temp: {tempMax}</li>
                 <li>Humidity: {humidity}</li>
-            </ul>
-        </div>
-
-        <div className="sunrise-sunset">
-            <ul>Sunrise and Sunset for today:
-                <li>Sunrise time for today: {sunrise}</li>
-                <li>Sunset time for today: {sunset}</li>
             </ul>
         </div>
         </>

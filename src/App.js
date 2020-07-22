@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <div className="top-navbar">
-        <div><a href="https://placeholder.com"> <img src="https://via.placeholder.com/40"></img></a></div>
-        <div>Top Navbar</div>
+        <div><img className="logo" src={require('./logo.png')}/></div>
+        <div><h1>pedo de bruja</h1></div>
       </div>
       
       <div className="left-sidebar">
@@ -25,13 +25,14 @@ function App() {
       </div>
             
       <div className="app-greeting">
-        <h1>Welcome Nico!</h1>
+        <h2>Buenas noches Nico, que haces despierta a esta hora?</h2>
       </div>
-      <div className="api-divs sunrise">Sunrise</div>
-      <div className="api-divs climate-data">Climate Data <OpenWeather/></div>
-      <div className="api-divs countdown-timer">Countdown Timer</div>
-      <div className="api-divs chuck-norris">Chuck Norris Jokes</div>
-      <div className="api-divs gmail-calendar">Gmail Calendar iFrame</div>
+      <OpenWeather/>
+      <div className="api-divs countdown-timer"><h4>Countdown Timer</h4></div>
+      <div className="api-divs chuck-norris"><h4>Chuck Norris Jokes</h4></div>
+      <div className="api-divs gmail-calendar"><h4>The Agenda:</h4>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ebf5f8&amp;ctz=America%2FNew_York&amp;src=bmphc2JvbkBnbWFpbC5jb20&amp;src=Y2xhc3Nyb29tMTA5MjEzMDA4ODU5NzMxNjQwMzkwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4uY28jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZW4uZWMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=bmljb0Bib2dvdGFkZXYuY29t&amp;color=%2333ae06&amp;color=%23a52714&amp;color=%2333B679&amp;color=%23009688&amp;color=%230B8043&amp;color=%230B8043&amp;color=%23E67C73&amp;showTz=0&amp;showTabs=0&amp;showPrint=0&amp;showNav=1&amp;showTitle=0"></iframe>
+      </div>
     </div>
   );
 }
