@@ -37,6 +37,7 @@ function Countdown(){
     const updateSeconds = (newSeconds) => {
         let seconds = newSeconds % 60
         let minutes = Math.floor(newSeconds / 60)
+        let hours = Math.floor(newSeconds/3600)
         console.log(totalSeconds())
         secondsTimer().value = seconds
         minutesTimer().value = minutes 
