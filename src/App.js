@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import OpenWeather from './OpenWeather.js';
-import TodoList from './TodoList';
+import TodoList from './TodoList.js';
+import Countdown from './Countdown.js'
 
 
 function App() {
@@ -36,7 +37,9 @@ function App() {
         <h2>Buenas noches Nico, que haces despierta a esta hora?</h2>
       </div>
       <OpenWeather/>
-      <div className="api-divs countdown-timer"><h4>Countdown Timer</h4></div>
+      <div className="api-divs countdown-timer">
+        <Countdown/>
+      </div>
       <div className="api-divs todo-list"><h4>Todo List</h4>
         <TodoList/>
       </div>

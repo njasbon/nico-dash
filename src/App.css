@@ -49,23 +49,27 @@
   border-right: 3px solid #0081AF;
 }
 
-.left-sidebar h2{
+.left-sidebar li h2{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 4px;
   font-size: 20px;
+  list-style-type: none;
+  color: black;
 }
-
+li a h2{
+  text-decoration: none;
+}
 li {
   list-style-type: none;
 }
 
-.left-unordered-list li a{ 
-  color: black;
-  text-decoration: none;
-}
-
 .gmail-calendar{
   display: flex;
+}
+
+.countdown-timer{
+  display: flex;
+  
 }
 
 .gmail-calendar iframe{

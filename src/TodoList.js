@@ -30,7 +30,9 @@ function TodoList(){
                 <input type="text" id="todo"/>
                 <input type="submit"/>
             </form>
+            <ol>
             {lis}
+            </ol>
         </div>
     )
 }
